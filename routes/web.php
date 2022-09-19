@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home')->with('title', '首頁')->with('hello', '大家好～～');
+});
+Route::get('wayne', function () {
+    return ('1234567890');
 });
