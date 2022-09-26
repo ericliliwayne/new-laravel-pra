@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('wayne', function () {
     return ('1234567890');
 });
+Route::get('/login', function () {
+    return view('login');
+});
