@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>會員登入</h1>
-    @csrf
-    <form action="" method="post">
-        帳號 : <input type="text" name="" id=""><br>
-        密碼 : <input type="password" name="" id=""><br>
+    <form action='/login' method='post'>
+        @csrf
+        帳號 : <input type="text" name="acc" id=""><br>
+        密碼 : <input type="password" name="pw" id=""><br>
         <input type="submit" value="登入">
     </form>
 </body>
